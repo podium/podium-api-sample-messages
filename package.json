@@ -4,14 +4,13 @@
   "description": "A Podium demo app for CRUD messages",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .js",
-    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+    "lint": "yarn eslint . --ext .js",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
+    "format": "prettier --write .",
+    "format:check": "prettier --list-different '**/*.{js,md,json,yml}'"
   },
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/podium/podium-api-sample-messages.git"
-  },
+  "repository": "https://github.com/podium/podium-api-sample-messages.git",
   "author": "Jairo Franco",
   "license": "ISC",
   "bugs": {
@@ -27,6 +26,7 @@
     "open": "^8.4.0"
   },
   "devDependencies": {
-    "jest": "^29.6.1"
+    "jest": "^29.6.1",
+    "prettier": "^3.3.3"
   }
 }

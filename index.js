@@ -56,7 +56,7 @@ export async function getTokenID() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(bodyData),
-      }
+      },
     );
 
     const tokenResponse = await tokenRequest.json();
